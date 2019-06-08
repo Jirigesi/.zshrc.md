@@ -1,0 +1,87 @@
+Last login: Fri Jun  7 21:23:59 on ttys000
+➜  ~ type python
+python is an alias for python3
+➜  ~ type python3
+python3 is /Library/Frameworks/Python.framework/Versions/3.7/bin/python3
+➜  ~ type pip
+pip is an alias for pip3
+➜  ~ type pip3
+pip3 is /Library/Frameworks/Python.framework/Versions/3.7/bin/pip3
+➜  ~ pip list
+Package    Version
+---------- -------
+pip        19.0.3 
+setuptools 40.8.0 
+virtualenv 16.6.0 
+You are using pip version 19.0.3, however version 19.1.1 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
+➜  ~ ls
+total 280
+drwxr-xr-x+ 35 jirigesi  staff   1120 Jun  7 21:34 .
+drwxr-xr-x   5 root      admin    160 May 30 17:17 ..
+-r--------   1 jirigesi  staff      7 Jun  2 16:45 .CFUserTextEncoding
+-rw-r--r--@  1 jirigesi  staff   8196 Jun  2 17:16 .DS_Store
+drwx------   2 jirigesi  staff     64 Jun  2 20:11 .Trash
+drwxr-xr-x  16 jirigesi  staff    512 Jun  3 20:15 .atom
+-rw-------   1 jirigesi  staff    724 Jun  5 00:17 .bash_history
+-rw-r--r--   1 jirigesi  staff    168 May 30 17:31 .bash_profile
+drwx------  15 jirigesi  staff    480 Jun  5 00:17 .bash_sessions
+lrwxr-xr-x   1 jirigesi  staff     32 Jun  4 22:36 .bashrc -> /Users/jirigesi/dotfiles/.bashrc
+drwxr-xr-x   3 jirigesi  staff     96 Jun  4 22:46 .cache
+lrwxr-xr-x   1 jirigesi  staff     35 Jun  4 22:36 .gitconfig -> /Users/jirigesi/dotfiles/.gitconfig
+drwxr-xr-x  19 jirigesi  staff    608 Jun  7 21:00 .oh-my-zsh
+-rw-------   1 jirigesi  staff    212 Jun  7 20:23 .python_history
+-rw-r--r--   1 jirigesi  staff     10 Jun  4 22:03 .shell.pre-oh-my-zsh
+lrwxr-xr-x   1 jirigesi  staff     35 Jun  4 22:36 .tmux.conf -> /Users/jirigesi/dotfiles/.tmux.conf
+drwxr-xr-x   3 jirigesi  staff     96 Jun  4 22:43 .vim
+-rw-------   1 jirigesi  staff   8084 Jun  7 21:33 .viminfo
+lrwxr-xr-x   1 jirigesi  staff     31 Jun  4 22:36 .vimrc -> /Users/jirigesi/dotfiles/.vimrc
+-rw-r--r--   1 jirigesi  staff  40451 Jun  7 21:03 .zcompdump-Jirigesi’s MacBook Pro (2)-5.3
+-rw-r--r--   1 jirigesi  staff  46513 Jun  4 22:03 .zcompdump-Jirigesi’s MacBook Pro (2)-5.7.1
+-rw-------   1 jirigesi  staff   2193 Jun  7 21:34 .zsh_history
+-rw-r--r--   1 jirigesi  staff   4312 Jun  7 21:33 .zshrc
+lrwxr-xr-x   1 jirigesi  staff     31 Jun  4 22:36 .zshrc.pre-oh-my-zsh -> /Users/jirigesi/dotfiles/.zshrc
+drwx------@  3 jirigesi  staff     96 May 30 17:23 Applications
+drwx------+  3 jirigesi  staff     96 May 30 17:17 Desktop
+drwx------+  5 jirigesi  staff    160 Jun  3 20:24 Documents
+drwx------+  4 jirigesi  staff    128 Jun  2 17:16 Downloads
+drwxr-xr-x   3 jirigesi  staff     96 Jun  7 18:39 Enviroments
+drwx------@ 62 jirigesi  staff   1984 Jun  2 16:45 Library
+drwx------+  3 jirigesi  staff     96 May 30 17:17 Movies
+drwx------+  4 jirigesi  staff    128 Jun  3 16:58 Music
+drwx------+  3 jirigesi  staff     96 May 30 17:17 Pictures
+drwxr-xr-x+  4 jirigesi  staff    128 May 30 17:17 Public
+drwxr-xr-x  16 jirigesi  staff    512 Jun  4 22:34 dotfiles
+➜  ~ vim .zshrc
+➜  ~ vim .zshrc
+➜  ~ nano
+➜  ~ nano .zshrc
+
+  GNU nano 2.0.6                      File: .zshrc                                                  
+
+# # Attaches tmux to the last session; creates a new session if none exists.
+ alias t='tmux attach || tmux new-session'
+#
+# # Attaches tmux to a session (example: ta portal)
+ alias ta='tmux attach -t'
+#
+# # Creates a new session
+ alias tn='tmux new-session'
+#
+# # Lists all ongoing sessions
+ alias tl='tmux list-sessions'
+
+alias c="clear"
+
+# set vim as default
+alias vi=vim
+alias svi='sudo vi'
+alias vis='vim "+set si"'
+alias edit='vim'
+
+# Setting PATH for Python3.7
+PATH="/Library/Frameworks/Python.framework/Versions/3.7/bin:${PATH}"
+export PATH
+
+alias python=python3
+alias pip=pip3
